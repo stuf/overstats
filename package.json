@@ -9,10 +9,23 @@
     "type": "git",
     "url": "https://github.com/stuf/overstats.git"
   },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=7.8.0"
+  },
   "scripts": {
+    "build": "babel src -d lib --source-maps",
     "dev:build": "babel src -d lib -w --source-maps inline",
     "dev:start": "nodemon -V -d 1 -w lib lib/index.js",
-    "start": "npm-run-all --parallel dev:build dev:start"
+    "start": "npm-run-all --parallel dev:build dev:start",
+    "test": "echo \"NYI\"",
+    "lint": "echo \"NYI\"",
+    "preversion": "npm test",
+    "version": "npm run build",
+    "prepublish": "npm run lint && npm run test && npm run build",
+    "publish": ""
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
