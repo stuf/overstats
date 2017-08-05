@@ -5,9 +5,13 @@
   "main": "lib/index.js",
   "author": "Stefan Rimaila <stefan@rimaila.fi>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stuf/overstats.git"
+  },
   "scripts": {
     "dev:build": "babel src -d lib -w --source-maps inline",
-    "dev:start": "nodemon -w src lib/index.js",
+    "dev:start": "nodemon -V -d 1 -w lib lib/index.js",
     "start": "npm-run-all --parallel dev:build dev:start"
   },
   "devDependencies": {

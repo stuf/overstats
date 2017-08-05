@@ -1,5 +1,5 @@
-import * as C from './controller';
+import { log } from 'util';
 
-console.log('started');
+log('NYI');
 
-console.log(process.env.USE_MOCK);
+process.exit(1);
