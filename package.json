@@ -1,0 +1,29 @@
+{
+  "name": "overstats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stefan Rimaila <stefan@rimaila.fi>",
+  "license": "MIT",
+  "scripts": {
+    "dev:build": "babel src -d lib -w --source-maps inline",
+    "dev:start": "nodemon -w src lib/index.js",
+    "start": "npm-run-all --parallel dev:build dev:start"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "source-map-support": "^0.4.15",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "karet.util": "^0.13.0",
+    "kefir": "^3.7.3",
+    "partial.lenses": "^11.15.0",
+    "ramda": "^0.24.1"
+  }
+}
