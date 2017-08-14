@@ -1,7 +1,7 @@
 {
   "name": "@stuf/overstats",
   "description": "Figure out your Overwatch stats so that you can track them over time and draw pretty graphs to see any possible progress. With streams! And lenses!",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "main": "lib/index.js",
   "author": "Stefan Rimaila <stefan@rimaila.fi>",
