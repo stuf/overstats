@@ -38,8 +38,10 @@
     "webpack": "^3.4.1"
   },
   "dependencies": {
+    "date-fns": "^1.28.5",
     "karet.util": "^0.13.0",
     "kefir": "^3.7.3",
+    "osmosis": "^1.1.4",
     "partial.lenses": "^11.15.0",
     "ramda": "^0.24.1"
   }
